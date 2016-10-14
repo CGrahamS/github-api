@@ -1,7 +1,14 @@
 .header {
+  margin-top: 2%;
   text-align: center;
 }
 
 .body {
   padding: 10%;
+}
+
+#profile-pic, img {
+  margin-top: 5%;
+  max-height: 250px;
+  border-radius: 20px;
 }

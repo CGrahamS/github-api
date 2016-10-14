@@ -1,8 +1,8 @@
 var User = require('./../js/user.js').userModule;
-var getRepos = require('./../js/user.js').getRepos;
 
-var displayUserInfo = function(userName, profilePic, name, repositories) {
-  $('.username').text(userName);
+var displayUserInfo = function(username, profilePic, name, repositories) {
+  $('.username').text(username);
+  $('#profile-pic').empty();
   $('#profile-pic').append('<img src="'+ profilePic + '" alt="' + name + ', profile picture" />')
   $('#name').text(name);
   for(repository of repositories) {
@@ -11,8 +11,9 @@ var displayUserInfo = function(userName, profilePic, name, repositories) {
 }
 
 $(document).ready(function(){
-  $("#getName").click(function(){
+  $("#get-info").click(function(){
     var username = $("#username").val();
-    getRepos(username, displayUserInfo);
+    var user = new User(username);
+    user.getUserInfo(username, displayUserInfo);
   });
 });
