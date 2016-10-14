@@ -3,7 +3,6 @@ var User = require('./../js/user.js').userModule;
 var displayUserInfo = function(username, profilePic, name, repositories) {
   $('#profile-pic').empty();
   $('#profile-pic').append('<img src="'+ profilePic + '" alt="' + name + ', profile picture" class="animated bounceIn"/>');
-  $('.username').addClass("animated" "bounceIn");
   $('.username').text(username);
   $('#name').text(name);
   $('#repositories').empty();
