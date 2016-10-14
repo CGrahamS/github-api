@@ -1,9 +1,10 @@
 var User = require('./../js/user.js').userModule;
+var getRepos = require('./../js/user.js').getRepos;
+
 
 $(document).ready(function(){
   $("#getName").click(function(){
-    var name = $("#name").val();
-    var newUser = new User(name);
-    $("#output-name").text(newUser.getName());
+    var username = $("#username").val();
+    getRepos(username);
   });
 });
