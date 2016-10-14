@@ -1,6 +1,6 @@
 # _Github API_
 
-### _Epicodus: JavaScript (Week 1: Tuesday)_
+### _Epicodus: JavaScript (Week 1: Friday, Independent Project)_
 
 #### By _[**Caleb Stevenson**](https://github.com/CGrahamS)_
 
@@ -22,8 +22,7 @@ A webpage that displays account information for a specific github user.
 2. Navigate to main repository: `$ cd Desktop/github-api`
 3. Install both back and front end dependencies: `$ npm install; bower install`
 4. Create .env file `$ touch .env`
-5. Paste the code below into the .env file you just created:
->! `exports.apiKey = "4c668147f93e354a5bd98ad5a8b3b1243d47f721";`
+5. Paste this code into the .env file you just created: `exports.apiKey = "4c668147f93e354a5bd98ad5a8b3b1243d47f721";`
 6. Start server: `$ gulp serve`
 
 The home page should open on your local host automatically!
