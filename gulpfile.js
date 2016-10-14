@@ -17,6 +17,11 @@ var lib = require('bower-files')({
         'dist/css/bootstrap.css',
         'dist/js/bootstrap.js'
       ]
+    },
+    'animate.css' : {
+      'main': [
+        'animate.min.css'
+      ]
     }
   }
 });
