@@ -5,8 +5,13 @@ var displayUserInfo = function(username, profilePic, name, repositories) {
   $('#profile-pic').empty();
   $('#profile-pic').append('<img src="'+ profilePic + '" alt="' + name + ', profile picture" />')
   $('#name').text(name);
+  $('#repositories').empty();
   for(repository of repositories) {
-    $('#repositories').append('<li>' + repository.name + ', ' + repository.language + '</li>');
+    if (repository.description !== null) {
+      $('#repositories').append('<li><h4 class="repo-name label label-primary">' + repository.name + '</h4> <br>' + repository.description + ', languages: ' + repository.language + '</li>');
+    } else {
+      $('#repositories').append('<li><h4 class="repo-name label label-primary">' + repository.name + '</h4> <br> No Description, languages: ' + repository.language + '</li>');
+    }
   }
 }
 

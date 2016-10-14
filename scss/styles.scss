@@ -4,11 +4,38 @@
 }
 
 .body {
-  padding: 10%;
+  padding: 2% 10%;
 }
 
-#profile-pic, img {
+#form {
+  max-width: 50%;
+  margin: 0 25%;
+  button {
+    margin: 2% 0;
+    width: 100%;
+  }
+}
+
+
+#profile-pic {
   margin-top: 5%;
-  max-height: 250px;
-  border-radius: 20px;
+  max-height: 5%;
+  padding: 0 25%;
+  img {
+    max-height: 20em;
+    border: solid black 3px;
+    border-radius: 20px;
+  }
+}
+
+.repo-name {
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+#repositories {
+  list-style: none;
+  li {
+    margin: 2% 0;
+  }
 }

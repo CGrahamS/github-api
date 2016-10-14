@@ -12,9 +12,9 @@ A webpage that displays account information for a specific github user.
 
 | BEHAVIOR                                                  | INPUT             | OUTPUT                                                                                                                                                                                                                      |
 |-----------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Program retrieves a github username                       | <h4>cgrahams</h4> | <h4>cgrahams</h4>                                                                                                                                                                                                           |
-| Program retrieves a github user's repositories            | <h4>cgrahams</h4> | <h4>cgrahams:</h4> <br> <strong>Repositories:</strong> <br> <em>journal</em> <em>alarm-clock</em> <em>ping-pong-js-2</em>                                                                                                   |
-| Program retrieves a github user's repository descriptions | <h4>cgrahams</h4> | <h4>cgrahams:</h4> <br> <strong>Repositories:</strong> <br> <em>journal:</em> <br> Epicodus JavaScript - Week 1 Monday <br> <em>alarm clock:</em> <br><br> <em>ping-pong-js-2:</em> <br> Epicodus JavaScript: Week 1 Monday |
+| Program retrieves a github username                       |***cgrahams*** |***cgrahams***                                                                                                                                                                                                           |
+| Program retrieves a github user's repositories            |***cgrahams*** |***cgrahams:*** <br> <strong>Repositories:</strong> <br> <em>journal</em> <em>alarm-clock</em> <em>ping-pong-js-2</em>                                                                                                   |
+| Program retrieves a github user's repository descriptions |***cgrahams*** |***cgrahams:*** <br> <strong>Repositories:</strong> <br> <em>journal:</em> <br> Epicodus JavaScript - Week 1 Monday <br> <em>alarm clock:</em> <br><br> <em>ping-pong-js-2:</em> <br> Epicodus JavaScript: Week 1 Monday |
 
 ## Setup/Installation Requirements
 
