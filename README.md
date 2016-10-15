@@ -25,7 +25,7 @@ A webpage that displays account information for a specific github user.
 5. Paste this code into the .env file you just created: `exports.apiKey = "4c668147f93e354a5bd98ad5a8b3b1243d47f721";`
 6. Start server: `$ gulp serve`
 
-The home page should open on your local host automatically!
+The home page should open on your default browser automatically!
 
 ## Known Bugs
 
