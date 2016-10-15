@@ -5,14 +5,17 @@ var displayUserInfo = function(username, profilePic, name, repositories) {
   $('.output').append('<div id="profile-pic"></div>')
   $('#profile-pic').append('<img src="'+ profilePic + '" alt="' + name + ', profile picture" class="animated fadeIn"/>');
   $('#profile-pic').after('<h3 class="animated fadeInLeftBig" id="username-display">' + username + '</h3>');
-  $('#username-display').after('<h4 class="animated fadeInLeftBig" id="name-display">' + name + '</h4>');
+  $('#username-display').after('<h4 class="animated fadeInRightBig" id="name-display">' + name + '</h4>');
   $('#name-display').after('<ul id="repositories"></ul>');
   for(repository of repositories) {
-    if (repository.description !== null) { //could not think of a way out of this conditional statement
-      $('#repositories').append('<a href='+repository.html_url+'><li class="animated fadeInRightBig"><h4 class="repo-name label label-primary">' + repository.name + '</h4></a> <br>' + repository.description + ' <br> Language: ' + repository.language + '</li>');
-    } else {
-      $('#repositories').append('<a href='+repository.html_url+'><li class="animated fadeInRightBig"><h4 class="repo-name label label-primary">' + repository.name + '</h4></a> <br> No Description <br> Language: ' + repository.language + '</li>');
-    }
+    $('#repositories').append('<div id="repository'+repositories.indexOf(repository)+'" class="repository"><ul></ul></div>')
+    $('#repository'+repositories.indexOf(repository)+' ul').append('<li class="repo-name animated fadeInUpBig"><a href='+repository.html_url+'><h4 class="label">' + repository.name + '</h4></a></li>');
+      if (repository.description !== null) {
+        $('#repository'+repositories.indexOf(repository)+' ul').append('<li class="repo-description animated fadeInUpBig">' + repository.description + '</li>');
+      } else {
+      $('#repository'+repositories.indexOf(repository)+' ul').append('<li class="repo-description animated fadeInUpBig"> No Description </li>');
+      }
+    $('#repository'+repositories.indexOf(repository)+' ul').append('<li class="animated fadeInUpBig"> Language: ' + repository.language + '</li>');
   }
 }
 

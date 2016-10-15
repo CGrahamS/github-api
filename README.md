@@ -40,7 +40,8 @@ Caleb Stevenson: _cgrahamstevenson@gmail.com_
 _HTML,
 CSS,
 JavaScript,
-Node_
+Node,
+Gulp_
 
 ### License
 

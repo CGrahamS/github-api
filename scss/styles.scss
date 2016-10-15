@@ -1,25 +1,31 @@
+body {
+  background-color: #b7b7b7;
+}
+
 .header {
   margin-top: 2%;
   text-align: center;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 .body {
   padding: 2% 10%;
-}
-
-.header {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Nunito', sans-serif;
 }
 
 #form {
   max-width: 50%;
   margin: 0 25%;
+  input {
+    background-color: #d1d1d1;
+  }
   button {
     margin: 2% 0;
     width: 100%;
+    background-color: #55767d;
+    border-color: #55767d;
   }
 }
-
 
 #profile-pic {
   margin-top: 5%;
@@ -32,14 +38,25 @@
   }
 }
 
+.label {
+  background-color: #55767d;
+}
+
 .repo-name {
-  text-transform: capitalize;
-  font-size: 1em;
+  margin: 2% 0;
+  h4 {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    color: #333333;
+  }
 }
 
 #repositories {
   list-style: none;
-  li {
-    margin: 2% 0;
+  .repository {
+    margin: 5% 0;
+    ul {
+      list-style: none;
+    }
   }
 }
